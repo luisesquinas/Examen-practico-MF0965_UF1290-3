@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CPP POST usuariosWindows</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .btn-custom {
+            width: 150px;
+            border: 1px solid #888;
+        }
+        h1 {
+            color: #666;
+            font-weight: normal;
+            font-size: 1.5rem;
+            margin: 20px 0; /* Espacio añadido */
+        }
+        #usuario {
+            font-size: 0.9rem;
+        }
+        #usuario::placeholder {
+            color: #a6a6a6;
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <h1 class="text-center">Control de usuarios</h1>
+    </header>
+
+    <main class="container">
+        <form id="registroUsuario" class="w-50 m-auto">
+            <input type="text" id="usuario" class="form-control m-2" placeholder="usuario" required>
+            
+            <div class="d-flex justify-content-center">
+                <input type="submit" class="btn btn-primary btn-custom m-2" value="Crear">
+                <button type="button" id="eliminarUsuarioBtn" class="btn btn-primary btn-custom m-2">Eliminar</button>
+            </div>
+
+            <div id="resultado" class="m-2 pt-4"></div>
+        </form>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
